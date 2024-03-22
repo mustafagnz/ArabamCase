@@ -62,6 +62,7 @@ dependencies {
     implementation(libs.dagger)
     implementation(libs.retrofit)
     implementation(libs.converter.moshi)
+    implementation(libs.androidx.paging.common.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
