@@ -4,6 +4,6 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class ResponseCarApi(
-    val results: List<Car>
+    val results: List<Advert>
 
 )

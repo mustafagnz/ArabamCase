@@ -4,7 +4,7 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 
-data class Car(
+data class Advert(
     val id: Int,
     val title: String,
     val location: Location,
