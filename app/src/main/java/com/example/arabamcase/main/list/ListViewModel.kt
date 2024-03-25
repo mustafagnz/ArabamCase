@@ -14,7 +14,6 @@ import com.example.arabamcase.paging.AdvertPagingSource
 import com.example.arabamcase.repository.AdvertRepository
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-
 class ListViewModel
 @Inject
 constructor(

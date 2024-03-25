@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/advertListFragment">
+    <fragment
+        android:id="@+id/advertListFragment"
+        android:name="com.example.arabamcase.main.list.AdvertListFragment"
+        android:label="fragment_advert_list"
+        tools:layout="@layout/fragment_advert_list" >
+        <action
+            android:id="@+id/action_advertListFragment_to_advertDetailsFragment"
+            app:destination="@id/advertDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/advertDetailsFragment"
+        android:name="com.example.arabamcase.main.detail.AdvertDetailsFragment"
+        android:label="fragment_advert_details"
+        tools:layout="@layout/fragment_advert_details" >
+        <action
+            android:id="@+id/action_advertDetailsFragment_to_advertListFragment"
+            app:destination="@id/advertListFragment" />
+    </fragment>
+</navigation>

@@ -32,6 +32,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -47,8 +48,11 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/gradle/incremental.annotation.processors"
         }
+
     }
+
 }
 
 dependencies {
@@ -71,6 +75,11 @@ dependencies {
     implementation(libs.hilt.compiler)
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.paging.runtime.ktx)
+    implementation(libs.glide)
+    implementation(libs.desugar.jdk.libs)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
